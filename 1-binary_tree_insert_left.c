@@ -6,12 +6,13 @@
  * binary_tree_insert_left - inserts a node as the left-child of another node
  * @parent: parent node of the node
  * @value: value of the new node
- * Return: the a pointer to the created node, or NULL on failure or if parent is NULL
+ * Return: the a pointer
+ * to the created node, or NULL on failure or if parent is NULL
  */
 
 binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value)
 {
-	binary_tree_t* cur_left_node;
+	binary_tree_t *cur_left_node;
 
 	if (parent == NULL)
 	{
