@@ -18,7 +18,7 @@ size_t max(size_t left, size_t right)
 /**
  * binary_tree_height - measures the height of a binary tree
  * @tree: pointer to the rrot of the tree
- * Returns: (0) if tree is NULLL otherwise, the tree height
+ * Return: (0) if tree is NULLL otherwise, the tree height
  */
 
 size_t binary_tree_height(const binary_tree_t *tree)
@@ -31,6 +31,6 @@ size_t binary_tree_height(const binary_tree_t *tree)
 
 	left = binary_tree_height(tree->left);
 	right = binary_tree_height(tree->right);
-	
+
 	return (max(left, right) + 1);
 }
